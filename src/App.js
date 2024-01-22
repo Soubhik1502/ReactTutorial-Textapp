@@ -37,7 +37,7 @@ function App() {
   }
   return (
     <>
-      <BrowserRouter >
+      <BrowserRouter>
         <Navbar mode={mode} toggleMode={toggleMode} btnText={btnText} />
         <Alert alert={alert} />
         <div className="container">
