@@ -37,7 +37,7 @@ function App() {
   }
   return (
     <>
-      <BrowserRouter basename='/ReactTutorial-Textapp/home'>
+      <BrowserRouter >
         <Navbar mode={mode} toggleMode={toggleMode} btnText={btnText} />
         <Alert alert={alert} />
         <div className="container">
@@ -50,7 +50,7 @@ function App() {
         </div>
       </BrowserRouter>
 
-    
+
 
     </>
   );
