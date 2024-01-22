@@ -37,13 +37,13 @@ function App() {
   }
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename='/ReactTutorial-Textapp'>
         <Navbar mode={mode} toggleMode={toggleMode} btnText={btnText} />
         <Alert alert={alert} />
         <div className="container">
 
           <Routes>
-            <Route exact path='/' element={<Textform heading="Enter Text to Analyze!" mode={mode} showAlert={showAlert} />} />
+            <Route exact path='/ReactTutorial-Textapp' element={<Textform heading="Enter Text to Analyze!" mode={mode} showAlert={showAlert} />} />
             <Route exact path="/about" element={<About mode={mode} />} />
           </Routes>
         </div>
