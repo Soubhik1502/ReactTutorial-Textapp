@@ -43,8 +43,9 @@ function App() {
         <div className="container">
 
           <Routes>
-            <Route exact path='ReactTutorial-Textapp/home' element={<Textform heading="Enter Text to Analyze!" mode={mode} showAlert={showAlert} />} />
-            <Route exact path="/about" element={<About mode={mode} />} />
+
+            <Route path='/' element={<Textform heading="Enter Text to Analyze!" mode={mode} showAlert={showAlert} />} />
+            <Route path="/about" element={<About mode={mode} />} />
           </Routes>
         </div>
       </BrowserRouter>
